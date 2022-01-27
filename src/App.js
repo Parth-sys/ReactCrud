@@ -35,9 +35,7 @@ function App(){
 
 
   const adduser = () => {
-    //1.fetch
-    //2.body-new user-stringify it
-    //3.header -json data we are going to send
+   
 
     fetch("https://60ebd304e9647b0017cdde45.mockapi.io/users",{
     method: "POST",
@@ -50,8 +48,7 @@ function App(){
       })
     }).then(()=>getUsers())
       
-    //.then(data=>data.json())
-    //.then((users)=>setnames())
+   
   }
 
 
@@ -137,7 +134,7 @@ function User({ name, pic, id, getUsers }) {
            <button onClick={()=>setedit(!edit)} >Edit</button>
          </div>
        </div>
-          {  edit? <Edit name={name} pic={pic} id={id} getUsers={getUsers}    setedit={setedit}    ></Edit>:""} 
+          {  edit? <Edit name={name} pic={pic} id={id} getUsers={getUsers}    setedit={setedit}    ></Edit>: ""  } 
       
       </>
   )
