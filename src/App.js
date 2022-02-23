@@ -9,7 +9,7 @@ function App(){
   const [pic, setpic] = useState("");
   const [user1, setUser1] = useState([]);
 
-  console.log(user1)
+ // console.log(user1)
   //var names=["Parth" , " rohit" , "Raj"]
 
   //const [names, setnames] = useState(" ");
